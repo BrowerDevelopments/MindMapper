@@ -1,15 +1,15 @@
 import React from 'react';
 import { StyleSheet, PanResponder, Animated, Text, View } from 'react-native';
-import Leaf from '/Users/jacobbrower/Documents/ReactNative/MindMapping/assets/Components/Leaf.js';
+import Node from '/Users/jacobbrower/Documents/ReactNative/MindMapping/assets/Components/Node.js';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Leaf buttonStyles={styles.button}
+      <Node 
         textStyles={styles.text}
-        content={'This is content'}
-        />
+        content={'This is a node.'}
+      />
     </View>
   );
 }
