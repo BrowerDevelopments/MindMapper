@@ -3,14 +3,16 @@
  * @author Sree and Br0wer
  */
 import React from 'react';
-import { StyleSheet, PanResponder, Animated, Text, View } from 'react-native';
-import Gesture from '/Users/jacobbrower/Documents/ReactNative/MindMapping/assets/Components/Gestures.js';
+import { StyleSheet, View } from 'react-native';
+import Node from '/Users/jacobbrower/Documents/ReactNative/MindMapping/assets/Components/Node.js';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Gesture></Gesture>
+      <Node
+        textStyles={styles.text}
+      />
     </View>
   );
 }

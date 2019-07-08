@@ -17,7 +17,10 @@ class Node extends Component {
       */
      constructor(props) {
           super(props);
-          this.state = { text: 'New Branch' };
+
+          this.state = { 
+               text: 'New Branch',
+          };
      }
 
      /**
@@ -37,7 +40,7 @@ class Node extends Component {
       */
      render = () => {
 
-          const {textStyles} = this.props;
+          let { textStyles } = this.props;
 
           return (
                <TouchableOpacity style={styles.nodeBackground}>
