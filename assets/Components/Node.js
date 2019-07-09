@@ -20,6 +20,7 @@ class Node extends Component {
 
           this.state = { 
                text: 'New Branch',
+               selected: false,
           };
      }
 

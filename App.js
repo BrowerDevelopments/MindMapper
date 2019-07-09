@@ -4,15 +4,14 @@
  */
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import Node from '/Users/jacobbrower/Documents/ReactNative/MindMapping/assets/Components/Node.js';
+import Draggable from '/Users/jacobbrower/Documents/ReactNative/MindMapping/assets/Components/Draggable.js';
 
 
 export default function App() {
+
   return (
     <View style={styles.container}>
-      <Node
-        textStyles={styles.text}
-      />
+      <Draggable />
     </View>
   );
 }
@@ -20,7 +19,7 @@ export default function App() {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#f3f',
   },
   container: {
     flex: 1,
@@ -31,9 +30,5 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: '#f3f3',
     justifyContent: 'center',
-  },
-  text: {
-    fontSize: 14,
-    color: '#fff'
   },
 });
